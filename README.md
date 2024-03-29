@@ -56,10 +56,25 @@ This technique of framing portfolio construction as a convex optimization proble
 
 In practical applications, frequent rebalancing of the portfolio may not be desirable or necessary. The *Sparse Updates* approach tolerates minor deviations from the exact `$1/n$` portfolio, aiming for a balance between performance and transaction costs. The portfolio is rebalanced to equal weights across all assets only if the change in weights since the last adjustment exceeds 20%. For changes less than this threshold, the current portfolio state is preserved.
 
+# Output Example
+<img src="images/img3.png" alt="" width="950">
 
-## Plots
+The analysis of Expected Shortfall (CVaR) at the 95% confidence level across three different portfolio strategies reveals insights into their risk profiles:
 
-Visual representations of the portfolio distributions are generated, comparing the monkey portfolio, equal weight (1/n) portfolio, and sparse updates portfolio.
+### Monkey Portfolio
+- **CVaR:** 0.064%
+- **Interpretation:** This portfolio shows an expected loss of 0.064% on the worst 5% of trading days, suggesting a relatively low risk profile. The implication for risk management is that, despite its random selection process, the monkey portfolio's vulnerability to extreme losses is minimal, thus challenging the notion that expertly curated portfolios significantly outperform randomly selected ones in terms of risk.
+
+### $1/n$ Portfolio
+- **CVaR:** 0.061%
+- **Interpretation:** The equal-weighted portfolio presents a slightly lower expected shortfall of 0.061%, indicating a marginally reduced risk of extreme losses compared to the monkey portfolio. This underscores the effectiveness of the $1/n$ strategy in distributing risk evenly across assets, thereby slightly mitigating the impact of adverse market movements.
+
+### Sparse Updates Portfolio
+- **CVaR:** 0.059%
+- **Interpretation:** Exhibiting the lowest CVaR among the three, the sparse updates portfolio demonstrates an expected loss of 0.059% on the worst 5% of days. This result suggests that allowing for deviations from the target allocation, within a tolerance level before rebalancing, does not significantly increase risk. In fact, it marginally decreases the portfolio's exposure to extreme negative outcomes, offering a nuanced approach to balancing risk and transaction costs.
+
+**Overall Analysis:** The relatively close CVaR values across all three portfolios suggest that the risk of extreme loss is comparably low, regardless of the selection or rebalancing strategy employed. This finding lends empirical support to the notion that market efficiency may render sophisticated selection strategies no more advantageous, in terms of risk management, than simpler or even random approaches. For a financial analyst, these outcomes highlight the importance of considering transaction costs and the practical benefits of simplicity in portfolio construction, without necessarily compromising on risk.
+
 
 ## Contributions
 
@@ -69,9 +84,6 @@ Contributions are welcome! If you have suggestions or improvements, please open 
 
 This project is licensed under the Apache License, Version 2.0.
 
-## Contact
-
-For questions or feedback, please contact <your-email>.
 
 ## Acknowledgements
 
