@@ -29,7 +29,9 @@ The repository showcases the use of convex optimization in the construction of p
 
 ## Analysis
 
-The notebook includes a detailed analysis of the generated portfolios, evaluating their performance and risk metrics such as the Expected Shortfall (CVaR) at a 95% confidence level.
+The notebook includes a detailed analysis of the generated portfolios, evaluating their performance and risk metrics such as the Expected Shortfall (CVaR) at a 95% confidence level..
+
+<img src="images/img3.png" alt="" >
 
 # Portfolio Analysis Scenarios
 
@@ -55,8 +57,6 @@ This technique of framing portfolio construction as a convex optimization proble
 ## Scenario 3: Sparse Updates
 
 In practical applications, frequent rebalancing of the portfolio may not be desirable or necessary. The *Sparse Updates* approach tolerates minor deviations from the exact `$1/n$` portfolio, aiming for a balance between performance and transaction costs. The portfolio is rebalanced to equal weights across all assets only if the change in weights since the last adjustment exceeds 20%. For changes less than this threshold, the current portfolio state is preserved.
-
-<img src="images/img3.png" alt="" >
 
 # Output Example
 <img src="images/img2.png" alt="" >
