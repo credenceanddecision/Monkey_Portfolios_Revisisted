@@ -3,7 +3,7 @@
 
 ## Introduction
 
-In Burton Malkiel's seminal publication, *A Random Walk Down Wall Street* (1973), the concept of "monkey portfolios" was proposed. It suggests that a portfolio randomly selected by a blindfolded monkey could perform as well as one curated by experts, echoing the efficient market hypothesis. This repository contains a Jupyter notebook that empirically investigates this theory through the construction and analysis of "monkey" portfolios.
+In the influential work "A Random Walk Down Wall Street" by Burton Malkiel, first published in 1973, an intriguing idea was put forth: portfolios assembled randomly, as if by a monkey throwing darts at financial pages, could rival the performance of those meticulously crafted by seasoned experts. This notion, which resonates with the principles of the efficient market hypothesis, serves as the impetus for this repository. Herein lies a Jupyter notebook dedicated to the empirical exploration of Malkiel's theory, offering both the construction and the subsequent analysis of such "monkey" portfolios.
 
 ## Repository Structure
 
