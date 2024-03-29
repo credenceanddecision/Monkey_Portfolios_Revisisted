@@ -19,6 +19,8 @@ To run the analyses contained in this repository, follow these steps:
 
 ## Portfolio Simulation
 
+Our objective is to quantify the return variability induced by the stochastic nature of stock selection and index rebalancing, distinguishing the influence of chance on investment outcomes.
+
 The notebook simulates the performance of randomly selected portfolios against a benchmark with variables such as the number of stocks (`n`) and the rebalance frequency (`f`). The simulation aims to estimate the performance and standard deviation of these synthetic indices relative to the benchmark.
 
 <img src="images/img1.png" alt="" >
