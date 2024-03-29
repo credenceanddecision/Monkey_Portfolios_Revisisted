@@ -21,7 +21,7 @@ To run the analyses contained in this repository, follow these steps:
 
 The notebook simulates the performance of randomly selected portfolios against a benchmark with variables such as the number of stocks (`n`) and the rebalance frequency (`f`). The simulation aims to estimate the performance and standard deviation of these synthetic indices relative to the benchmark.
 
-<img src="images/img1.png" alt="" width="850">
+<img src="images/img1.png" alt="" width="950">
 
 ## Convex Optimization
 
