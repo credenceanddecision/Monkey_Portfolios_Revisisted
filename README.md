@@ -21,7 +21,7 @@ To run the analyses contained in this repository, follow these steps:
 
 The notebook simulates the performance of randomly selected portfolios against a benchmark with variables such as the number of stocks (`n`) and the rebalance frequency (`f`). The simulation aims to estimate the performance and standard deviation of these synthetic indices relative to the benchmark.
 
-<img src="images/img1.png" alt="" width="950">
+<img src="images/img1.png" alt="" >
 
 ## Convex Optimization
 
@@ -57,7 +57,7 @@ This technique of framing portfolio construction as a convex optimization proble
 In practical applications, frequent rebalancing of the portfolio may not be desirable or necessary. The *Sparse Updates* approach tolerates minor deviations from the exact `$1/n$` portfolio, aiming for a balance between performance and transaction costs. The portfolio is rebalanced to equal weights across all assets only if the change in weights since the last adjustment exceeds 20%. For changes less than this threshold, the current portfolio state is preserved.
 
 # Output Example
-<img src="images/img2.png" alt="" width="950">
+<img src="images/img2.png" alt="" >
 
 The analysis of Expected Shortfall (CVaR) at the 95% confidence level across three different portfolio strategies reveals insights into their risk profiles:
 
